@@ -1,16 +1,39 @@
 class Game:
     def __init__(self, key, snake):
+        self.array_game = []
         self.key = key
         self.snake = snake
-        self.win = False
+        self.game_run = True
         
-        while(self.win == False):
+        while(self.game_run == True):
             self.run()
         
             
     def run(self):
-        print("test")
-        self.win = True
+        self.generate_jarres()
+        self.userChoice()        
+    
+    def generate_jarres(self):
+        for i in range(self.snake):
+            self.array_game.append("snake")
+            
+        for i in range(self.key):
+            self.array_game.append("key")
+            
+    def userChoice(self):
+        print("5 jarres sont devant vous !")
+        inputUser = int(input("Quelle jarre voulez ouvrir ? "))
+        
+        if (self.array_game[inputUser] == "snake"):
+            print("Cette jarre contient un serpent !")
+            print("Perdu...")
+            self.game_run = False
+        else:
+            print("Cette jarre contient une clé !")
+            print("Gagner !")
+            self.game_run = False
+            
+        
             
             
 # Affiche le menu de séléction pour l'utilisateur.    
