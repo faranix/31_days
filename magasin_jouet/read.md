@@ -10,9 +10,9 @@ Chaque page contient une liste de jouets
 
 - Chaque jouet possede désormais un prix, une description et un % de promotion X
 - Créer un objet Jouet avec ses caractéristiques X
-- Trier la liste de jouets par rapport à son prix
-- Afficher en console cette liste en partant du jouet le moins cher
+- Trier la liste de jouets par rapport à son prix X
+- Afficher en console cette liste en partant du jouet le moins cher  X
 
 # Niveau 3
 
-- Utiliser la notion de Comparator / Comparable pour optimiser la mecanique Si deux produits ont le meme prix, les retrier par ordre alphabetique entre eux
+- Utiliser la notion de Comparator / Comparable pour optimiser la mecanique Si deux produits ont le meme prix, les retrier par ordre alphabetique entre eux X
