@@ -1,0 +1,84 @@
+/* === Reset && All === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    --color-bg: #332c2c;
+    --color-white: #fff;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: currentColor;
+    text-decoration: none;
+}
+
+/* ===  Header === */
+.header {
+    padding: 5rem 3rem 1rem 3rem;
+    background: var(--color-bg);
+}
+
+.header__top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8rem;
+}
+
+.header__logo {
+    width: 200px;
+}
+
+.header__logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.header__top>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__title {
+    font-size: clamp(5rem, 10rem, 20rem);
+    text-transform: uppercase;
+    color: var(--color-white);
+}
+
+.header__text {
+    font-size: clamp(1rem, 1.5rem, 2rem);
+    font-weight: bold;
+    text-transform: capitalize;
+    color: var(--color-white);
+}
+
+/* === Header Nav === */
+.header__nav ul {
+    display: flex;
+    align-items: center;
+    gap: 0rem 1rem;
+}
+
+.header__nav li a {
+    padding: .5rem 1rem;
+    text-transform: uppercase;
+    background: var(--color-white);
+}
+
+.header__nav li {
+    transition: all 300ms ease;
+}
+
+.header__nav li:hover {
+    transform: scale(1.05);
+}
