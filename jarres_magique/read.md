@@ -7,6 +7,7 @@
 - Si il tombe sur un piege, affiche Piege sinon Gagné
 
 # Niveau 2 
+
 - Le joueur possède un compteur de clé appelé "trousseau"
 Chaque fois que le joueur gagne
 -> Ajoute une clé à son trousseau
