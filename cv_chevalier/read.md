@@ -32,7 +32,7 @@ Pour se faire, il doit réaliser au plus vite un CV en ligne sous forme d'une pa
 "
 1. Bataille de Vouillé - printemps 507 - Attaquant Francs
 2. Siège d'Arles - 507-508 - Défenseur Francs et Formation sur l'arbalète
-3
+3  Bataille du Mont Badon 516 - Attaquant bretons sur les saxons
 4. Siège de Graven - 518 - Commandant de l'armée gravenienne
 
 "

@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     --color-bg: #332c2c;
     --color-white: #fff;
@@ -50,13 +54,13 @@ a {
 }
 
 .header__title {
-    font-size: clamp(5rem, 10rem, 20rem);
+    font-size: clamp(.5rem, 8vw, 20rem);
     text-transform: uppercase;
     color: var(--color-white);
 }
 
 .header__text {
-    font-size: clamp(1rem, 1.5rem, 2rem);
+    font-size: clamp(.5rem, 2vw, 2rem);
     font-weight: bold;
     text-transform: capitalize;
     color: var(--color-white);
@@ -71,6 +75,7 @@ a {
 
 .header__nav li a {
     padding: .5rem 1rem;
+    font-size: clamp(.8rem, 2vw, 1rem);
     text-transform: uppercase;
     background: var(--color-white);
 }
@@ -81,4 +86,119 @@ a {
 
 .header__nav li:hover {
     transform: scale(1.05);
+}
+
+/* === About === */
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0rem;
+    background: url("../images/intro.jpg") no-repeat fixed;
+    background-size: cover;
+}
+
+.about__text {
+    width: 50%;
+    padding: 1.5rem;
+    background: var(--color-bg);
+}
+
+.about__text h2 {
+    margin-bottom: 1rem;
+    font-size: clamp(1.2rem, 2vw, 2rem);
+    color: var(--color-white);
+}
+
+.about__text p {
+    margin-bottom: 1rem;
+    font-size: clamp(.8rem, 2vw, 1rem);
+    color: var(--color-white);
+}
+
+/* === Conquetes === */
+.conquetes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0rem;
+    background: var(--color-bg);
+    color: var(--color-white);
+}
+
+.conquetes__text {
+    width: 50%;
+    padding: 1.5rem;
+    background: var(--color-bg);
+}
+
+.conquetes__text h2 {
+    margin-bottom: 1rem;
+    font-size: clamp(1.2rem, 2vw, 2rem);
+    color: var(--color-white);
+}
+
+.conquetes__text ul {
+    display: flex;
+    flex-direction: column;
+    padding-left: 3rem;
+    gap: .5rem 0rem;
+}
+
+.conquetes__text ul li {
+    font-size: clamp(.8rem, 2vw, 1rem);
+    list-style: initial;
+}
+
+/* === Armes === */
+.armes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../images/armurerie.jpg") no-repeat fixed;
+    background-size: cover;
+    padding: 5rem 0rem;
+}
+
+.armes_container {
+    width: 50%;
+    padding: 1.5rem;
+    background: var(--color-bg);
+    color: var(--color-white);
+}
+
+
+.armes_container h2 {
+    margin-bottom: 2rem;
+    color: var(--color-white);
+}
+
+.container__img {
+    display: flex;
+    gap: 1rem;
+}
+
+.container__img figure {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex: 1;
+}
+
+.container__img img {
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/** Footer **/
+.footer {
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    gap: 0rem 1rem;
+    color: var(--color-white);
+    background: var(--color-bg);
 }

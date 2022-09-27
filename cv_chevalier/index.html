@@ -13,29 +13,93 @@
 <body>
     <header class="header">
         <div class="header__top">
-            <figure class="header__logo">
-                <img src="./images/warrior.png" alt="Une image de Rodrigo">
-            </figure>
+            <div class="header__logo">
+                <img role="img" aria-label="Image de Rodrigo" src="./images/warrior.png" alt="Une image de Rodrigo">
+            </div>
     
             <div>
-                <h1 class="header__title">rodrigo</h1>
+                <h1 role="heading" aria-level="1" class="header__title">rodrigo</h1>
                 <p class="header__text">chevalier pro</p>
             </div>  
         </div>
 
-        <nav class="header__nav">
-            <ul>
-                <li>
-                    <a href="#">qui suis-je</a>
+        <nav role="navigation" aria-label="Navigation du site" class="header__nav">
+            <ul role="menu">
+                <li role="presentation">
+                    <a role="menuitem" href="#about">qui suis-je</a>
                 </li>
-                <li>
-                    <a href="#">conquêtes</a>
+                <li role="presentation">
+                    <a role="menuitem" href="#conquetes">conquêtes</a>
                 </li>
-                <li>
-                    <a href="#">armes</a>
+                <li role="presentation">
+                    <a role="menuitem" href="#armes">armes</a>
                 </li>
             </ul>
         </nav>
     </header>
+
+    <main role="main">
+        <section role="group" id="about" class="about">
+            <div class="about__text">
+                <h2 role="heading" aria-level="2">Qui suis-je ?</h2>
+                <p>
+                    Bonjour, moi c'est Rodrigo, je suis né en l'an 485.
+                    Je recherche un emploi dans l'armée en tant que commandant de l'arbalète sacrée.
+                    Je possède de multiples comptétences en gestion et en stratégie de combat.
+                    Merci de me contacter au 01 02 03 04 05
+                </p>
+            </div>
+        </section>
+
+        <section role="group" id="conquetes" class="conquetes">
+            <div class="conquetes__text">
+                <h2 role="heading" aria-level="2">Conquêtes</h2>
+    
+                <ul role="list">
+                    <li role="listitem">Siège de Graven - 518 - Commandant de l'armée gravenienne</li>
+                    <li role="listitem">Bataille du Mont Badon 516 - Attaquant bretons sur les saxons</li>
+                    <li role="listitem">Siège d'Arles - 507-508 - Défenseur Francs et Formation sur l'arbalète</li>
+                    <li role="listitem">Bataille de Vouillé - printemps 507 - Attaquant Francs</li>
+                </ul>
+            </div>
+        </section>
+
+        <section role="group" id="armes" class="armes">
+            <div class="armes_container">
+                <h2 role="heading" aria-level="2">Armes</h2>
+                <div class="container__img">
+                    <figure role="figure">
+                        <img role="img" aria-label="Une Hache" src="./images/axe.png" alt="Une image d'une hache">
+                        <figcaption >1920</figcaption >
+                    </figure>
+                    <figure role="figure">
+                        <img role="img" aria-label="Un Canon" src="./images/cannon.png" alt="Une image d'un canon">
+                        <figcaption >1920</figcaption >
+                    </figure>
+                    <figure role="figure">
+                        <img role="img" aria-label="Une Catapulte" src="./images/catapult.png" alt="Une image d'une catapulte">
+                        <figcaption >1920</figcaption >
+                    </figure>
+                    <figure role="figure">
+                        <img role="img" aria-label="Une Arbaléte" src="./images/crossbow.png" alt="Une image d'une arbaléte">
+                        <figcaption >1920</figcaption >
+                    </figure>
+                    <figure role="figure">
+                        <img role="img" aria-label="Une Lance" src="./images/spear.png" alt="Une image d'une lance">
+                        <figcaption >1920</figcaption >
+                    </figure>
+                    <figure role="figure">
+                        <img role="img" aria-label="Fléau d'armes" src="./images/torture.png" alt="Une image d'un fléau d'armes">
+                        <figcaption >1920</figcaption  >
+                    </figure>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <a aria-label="Permets d'envoyer un e-mail" href="mailto:rodrigo.cavalerie@graven.yt">rodrigo.cavalerie@graven.yt</a>
+        <p>copyright 480-2022</p>
+    </footer>
 </body>
 </html>
