@@ -43,4 +43,3 @@ Pour se faire, il doit réaliser au plus vite un CV en ligne sous forme d'une pa
 ### Niveau 3 
 
 - Styliser l'arriére-plan de chacune des sections de la page en alternant Fond gris et images
-- Ajouter un menu de navigation, lorsqu'on clique sur un des liens, la page glisse jusqu'a l'élément en question avec du javascript.
